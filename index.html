@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturpellet - Soluciones B2B</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1f2937; /* Gris Oscuro */
+            line-height: 1.6;
+        }
+        /* Paleta de Colores basada en las imágenes del cliente */
+        .color-primary { background-color: #4d592e; } /* Verde Oliva Oscuro */
+        .color-text-primary { color: #4d592e; }
+        .color-secondary { background-color: #835c34; } /* Marrón Terracota Oscuro */
+        .color-accent-text { color: #ff6a00; } /* Naranja/Ardilla */
+        
+        /* Layout para simulación de impresión */
+        .page-section {
+            padding: 4rem 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .table-standard th {
+            background-color: #fcf8f0; /* Color claro para la tabla */
+            color: #1f2937;
+        }
+        .table-standard td:nth-child(2) {
+            font-weight: 700;
+            color: #835c34; /* Valor en color marrón */
+        }
+        
+        /* Simulación de Placeholder de Logo (Ardilla y Texto) */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        .squirrel-icon {
+            /* Simulación de la silueta de la ardilla */
+            width: 50px;
+            height: 50px;
+            background-color: #ff6a00; 
+            border-radius: 50%;
+            position: relative;
+            margin-right: 10px;
+        }
+        .squirrel-icon::after {
+            content: '🐿️'; /* Emoji como marcador de posición de la ardilla */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            line-height: 1;
+        }
+
+        /* Imágenes de fondo para simular calidad visual */
+        .bg-image-pellets { 
+            background-image: url('https://placehold.co/1200x400/995c25/ffffff?text=FOTO%20PELLET%20GRANEL'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-image-granel { 
+            background-image: url('https://placehold.co/600x400/835c34/ffffff?text=Log%C3%ADstica%20a%20Granel'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-image-hotel { 
+            background-image: url('https://placehold.co/600x400/a3e635/000000?text=Caso%20Hotel%20Premium'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-image-farm { 
+            background-image: url('https://placehold.co/600x400/4d592e/ffffff?text=Caso%20Agroindustria'); 
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. CUBIERTA Y LOGO (Diseño Minimalista) -->
+    <header class="page-section color-primary text-white rounded-b-xl shadow-2xl">
+        <div class="logo-container">
+            <div class="squirrel-icon"></div>
+            <h1 class="text-4xl font-extrabold tracking-tight">NATURPELLET</h1>
+        </div>
+        <div class="text-center">
+            <h2 class="text-2xl font-semibold mb-4">El Socio Estratégico para su Demanda Energética B2B</h2>
+            <p class="text-lg opacity-80">Suministro a Granel de Pellet ENplus A1, Producto Local.</p>
+        </div>
+    </header>
+
+    <!-- 2. FICHA TÉCNICA Y GARANTÍA DE CALIDAD (Valores Reales) -->
+    <section class="page-section">
+        <div class="text-center mb-10">
+            <h3 class="text-3xl font-bold color-text-primary mb-2">Garantía de Calidad Certificada y Rendimiento</h3>
+            <p class="text-gray-500">Máximo poder calorífico y mínimo mantenimiento para operaciones B2B.</p>
+        </div>
+        
+        <!-- Ficha Técnica con datos precisos (MJ/Kg y % reales) -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-bold mb-4 border-b pb-2">ESPECIFICACIONES TÉCNICAS: Naturpellet - ENplus A1</h4>
+            <table class="w-full table-auto table-standard text-sm text-left rounded-lg overflow-hidden">
+                <thead class="text-xs uppercase">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">Parámetro</th>
+                        <th scope="col" class="px-6 py-3">Valor Real Naturpellet</th>
+                        <th scope="col" class="px-6 py-3">Requisito ENplus A1 (Máx.)</th>
+                        <th scope="col" class="px-6 py-3">Beneficio Operacional Clave</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b bg-white">
+                        <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">Poder Calorífico</th>
+                        <td class="px-6 py-4 color-accent-text">$\mathbf{19,6 \text{ MJ/kg}}$ ($\mathbf{5,44 \text{ kWh/kg}}$)</td>
+                        <td class="px-6 py-4">$\ge 16,5 \text{ MJ/kg}$ ($\ge 4,6 \text{ kWh/kg}$)</td>
+                        <td class="px-6 py-4">Máxima eficiencia, **menos pellet necesario** para generar el mismo calor.</td>
+                    </tr>
+                    <tr class="border-b bg-white">
+                        <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">Contenido en Cenizas</th>
+                        <td class="px-6 py-4 color-accent-text">$\mathbf{0,50 \%}$</td>
+                        <td class="px-6 py-4">$\le 0,7 \%$</td>
+                        <td class="px-6 py-4">**Mínima generación de residuos**, lo que reduce la frecuencia de limpieza.</td>
+                    </tr>
+                    <tr class="border-b bg-white">
+                        <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">Humedad</th>
+                        <td class="px-6 py-4 color-accent-text">$\mathbf{4,4 \%}$</td>
+                        <td class="px-6 py-4">$\le 10 \%$</td>
+                        <td class="px-6 py-4">Excelente rendimiento y evita problemas de condensación y combustión incompleta.</td>
+                    </tr>
+                    <tr class="border-b bg-white">
+                        <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">Dureza Mecánica</th>
+                        <td class="px-6 py-4 color-accent-text">$\mathbf{99,0 \%}$</td>
+                        <td class="px-6 py-4">$\ge 97,5 \%$</td>
+                        <td class="px-6 py-4">El pellet llega al quemador **absolutamente consistente**, minimizando el polvo (finos).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <!-- 3. CASOS DE ÉXITO (Diseño en Tarjetas con Imagen) -->
+    <section class="page-section color-secondary text-white rounded-xl shadow-xl">
+        <h3 class="text-3xl font-bold text-center mb-10">Casos de Éxito: Soluciones por Sector</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- CASO 1: AGROINDUSTRIA -->
+            <div class="bg-white text-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <div class="bg-image-farm h-40 flex items-end p-4">
+                     <span class="bg-red-600 text-white font-bold px-3 py-1 rounded-full text-sm">CASO 1</span>
+                </div>
+                <div class="p-4">
+                    <h4 class="text-xl font-bold color-text-primary mb-2">Agroindustria: Estabilidad de Costos</h4>
+                    <p class="text-sm italic mb-3">Granja de Alto Rendimiento (Segovia)</p>
+                    <p class="text-sm">Eliminamos la dependencia del **Gasóleo C** con un suministro a granel de volumen constante.</p>
+                    <ul class="mt-3 text-sm font-semibold list-disc list-inside space-y-1">
+                        <li>**Ahorro Anual:** $\mathbf{28\%}$ en calefacción.</li>
+                        <li>**Mantenimiento:** Reducción del $40\%$ en paros de máquina.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CASO 2: TURISMO PREMIUM -->
+            <div class="bg-white text-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <div class="bg-image-hotel h-40 flex items-end p-4">
+                    <span class="bg-amber-600 text-white font-bold px-3 py-1 rounded-full text-sm">CASO 2</span>
+                </div>
+                <div class="p-4">
+                    <h4 class="text-xl font-bold color-text-primary mb-2">Turismo: Sostenibilidad de Marca</h4>
+                    <p class="text-sm italic mb-3">Hotel Balneario 5 Estrellas (Valladolid)</p>
+                    <p class="text-sm">Calor eficiente para SPA y ACS. El origen local y renovable se usa como un fuerte argumento de marketing.</p>
+                    <ul class="mt-3 text-sm font-semibold list-disc list-inside space-y-1">
+                        <li>**Ahorro Operativo:** $\mathbf{25\%}$ frente al consumo de gas natural.</li>
+                        <li>**Beneficio Clave:** Obtención de la etiqueta "Huella de Carbono Reducida".</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CASO 3: ALIANZA ESTRATÉGICA -->
+            <div class="bg-white text-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <div class="bg-image-granel h-40 flex items-end p-4">
+                    <span class="bg-blue-600 text-white font-bold px-3 py-1 rounded-full text-sm">CASO 3</span>
+                </div>
+                <div class="p-4">
+                    <h4 class="text-xl font-bold color-text-primary mb-2">Socios B2B: Logística a Prueba de Fallos</h4>
+                    <p class="text-sm italic mb-3">Empresa de Servicios Energéticos (ESE)</p>
+                    <p class="text-sm">Alianza de suministro para garantizar que la ESE ofrece el mejor combustible, en volumen y sin sorpresas logísticas.</p>
+                    <ul class="mt-3 text-sm font-semibold list-disc list-inside space-y-1">
+                        <li>**Garantía de Servicio:** Suministro certificado en **menos de 48 horas**.</li>
+                        <li>**Beneficio Clave:** La ESE mejora la oferta de combustible de sus clientes finales.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 4. LLAMADA A LA ACCIÓN Y CONTACTO (Datos Reales) -->
+    <section class="page-section text-center bg-gray-100 rounded-t-xl shadow-inner">
+        <h3 class="text-3xl font-bold mb-4 color-text-primary">Contacto y Viabilidad</h3>
+        <p class="text-xl text-gray-600 mb-6">Contáctenos hoy para iniciar su estudio de ahorro energético sin compromiso.</p>
+        
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+            <a href="mailto:naturpellet@naturpellet.es" class="bg-white border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-50 font-extrabold py-3 px-8 rounded-full shadow-lg transition duration-300">
+                Email: naturpellet@naturpellet.es
+            </a>
+            <a href="tel:+34921160188" class="bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-3 px-8 rounded-full shadow-lg transition duration-300">
+                Teléfono: 921 160 188
+            </a>
+        </div>
+
+        <div class="mt-10 pt-4 border-t border-gray-300">
+            <p class="text-gray-500 text-sm font-bold">NATURPELLET S.L. | Producción y Distribución B2B</p>
+            <p class="text-gray-500 text-sm">Dirección: Salida 60, A-601, 40297 Sanchonuño, Segovia</p>
+            <p class="text-gray-500 text-sm">Consulte a su distribuidor: naturpellet@naturpellet.es</p>
+        </div>
+    </section>
+
+</body>
+</html>
